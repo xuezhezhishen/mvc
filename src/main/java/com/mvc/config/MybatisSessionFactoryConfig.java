@@ -1,6 +1,6 @@
 package com.mvc.config;
 
-//import com.mvc.dao.hibernate.impl.CP_Hibernate4DAOImpl;
+//import com.mvc.component.dao.hibernate.impl.CP_Hibernate4DAOImpl;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.log4j.Logger;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -31,7 +31,7 @@ import java.util.Properties;
 @EnableTransactionManagement(proxyTargetClass = true)
 @Import({MyBatisDataSourceConfig.class})
 @PropertySource({"classpath:config/properties/db.properties"})
-@MapperScan(basePackages = "com.mvc.dao.mybatis.impl")
+@MapperScan(basePackages = "com.mvc.component.dao.mybatis.impl")
 public class MybatisSessionFactoryConfig {
 
     private static final Logger logger = Logger.getLogger(MybatisSessionFactoryConfig.class);
@@ -95,7 +95,7 @@ public class MybatisSessionFactoryConfig {
 //        logger.info("MapperScannerConfigurer init");
 //        MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
 //        mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-//        mapperScannerConfigurer.setBasePackage("com.mvc.dao.mybatis.impl");
+//        mapperScannerConfigurer.setBasePackage("com.mvc.component.dao.mybatis.impl");
 //        return mapperScannerConfigurer;
 //    }
 

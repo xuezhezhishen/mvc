@@ -1,7 +1,6 @@
-package com.mvc.dao;
+package com.mvc.component.dao;
 
 import com.mvc.entity.Message;
-import com.mvc.entity.UserInfo;
 
 import java.util.List;
 

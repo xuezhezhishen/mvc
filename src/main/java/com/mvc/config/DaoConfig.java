@@ -1,6 +1,6 @@
 package com.mvc.config;
 
-//import com.mvc.dao.hibernate.impl.CP_Hibernate4DAOImpl;
+//import com.mvc.component.dao.hibernate.impl.CP_Hibernate4DAOImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

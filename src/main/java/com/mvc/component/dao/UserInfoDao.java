@@ -1,7 +1,6 @@
-package com.mvc.dao;
+package com.mvc.component.dao;
 
 import com.mvc.entity.UserInfo;
-import org.springframework.stereotype.Repository;
 
 
 public interface UserInfoDao {

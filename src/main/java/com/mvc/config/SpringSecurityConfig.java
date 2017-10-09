@@ -1,7 +1,7 @@
 //package com.mvc.config;
 //
 //import com.mvc.interrupt.CommonSecurityFilter;
-//import com.mvc.service.CustomerUserDetailsService;
+//import com.mvc.component.service.CustomerUserDetailsService;
 //import org.apache.log4j.Logger;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;

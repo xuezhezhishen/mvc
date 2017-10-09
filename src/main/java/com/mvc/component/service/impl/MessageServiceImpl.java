@@ -1,11 +1,11 @@
-//package com.mvc.service.impl;
+//package com.mvc.component.service.impl;
 //
-//import com.mvc.dao.MessageDao;
-//import com.mvc.dao.UserInfoDao;
+//import com.mvc.component.dao.MessageDao;
+//import com.mvc.component.dao.UserInfoDao;
 //import com.mvc.entity.Message;
 //import com.mvc.entity.UserInfo;
-//import com.mvc.service.MessageService;
-//import com.mvc.service.UserInfoService;
+//import com.mvc.component.service.MessageService;
+//import com.mvc.component.service.UserInfoService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Service;
 //import org.springframework.transaction.annotation.Propagation;

@@ -1,18 +1,15 @@
-package com.mvc.service;
+package com.mvc.component.service;
 
-import com.mvc.dao.UserInfoDao;
 import com.mvc.entity.GrantedAuthorityObject;
 import com.mvc.entity.Role;
 import com.mvc.entity.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

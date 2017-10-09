@@ -1,7 +1,6 @@
-package com.mvc.service;
+package com.mvc.component.service;
 
 import com.mvc.entity.Message;
-import com.mvc.entity.UserInfo;
 
 import java.util.List;
 

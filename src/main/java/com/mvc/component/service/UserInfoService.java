@@ -1,4 +1,4 @@
-package com.mvc.service;
+package com.mvc.component.service;
 
 import com.mvc.entity.UserInfo;
 

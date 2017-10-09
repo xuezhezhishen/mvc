@@ -1,7 +1,7 @@
 //package com.mvc.controller;
 //
 //import com.mvc.dto.TestVO;
-//import com.mvc.service.MessageService;
+//import com.mvc.component.service.MessageService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.i18n.LocaleContextHolder;
 //import org.springframework.stereotype.Controller;

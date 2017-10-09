@@ -1,9 +1,8 @@
-package com.mvc.service.impl;
+package com.mvc.component.service.impl;
 
-import com.mvc.dao.UserInfoDao;
+import com.mvc.component.dao.UserInfoDao;
 import com.mvc.entity.UserInfo;
-import com.mvc.service.UserInfoService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.mvc.component.service.UserInfoService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,7 +14,7 @@ import javax.annotation.Resource;
 @Service("userInfoService")
 public class UserInfoServiceImpl implements UserInfoService{
 
-    @Resource
+    @Resource(name = "userInfoDao")
     private UserInfoDao userInfoDao;
 
 //    @Resource(name="userInfoDaoImpl")
