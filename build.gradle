@@ -1,0 +1,75 @@
+group 'com.hlb'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'maven'
+sourceCompatibility = 1.7
+repositories {
+    mavenCentral()
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+dependencies {
+//    compile files('libs/ehcache-core-2.4.8.jar')
+    // 本地加载方式
+//    compile fileTree(dir:'libs',include:['*.jar'])
+    compile("org.springframework:spring-context:4.3.6.RELEASE")
+    compile("org.springframework:spring-web:4.3.6.RELEASE")
+    compile("org.apache.tomcat:tomcat-servlet-api:8.0.24")
+    compile("org.springframework:spring-web:4.3.6.RELEASE")
+    compile("org.springframework:spring-webmvc:4.3.6.RELEASE")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.8.6")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.8.6")
+    compile("com.fasterxml.jackson.core:jackson-core:2.8.6")
+    compile("org.slf4j:slf4j-api:1.7.25")
+    compile("org.slf4j:slf4j-log4j12:1.7.25")
+    compile("org.springframework:spring-orm:4.3.6.RELEASE")
+
+    compile("org.springframework.security:spring-security-web:4.2.2.RELEASE")
+
+//    compile("org.apache.logging.log4j:log4j-core:2.8.2")
+//    compile("log4j:log4j:1.2.17")
+    compile("org.springframework:spring-context-support:4.3.6.RELEASE")
+
+    compile("org.hibernate:hibernate-core:5.1.7.Final")
+    compile("org.hibernate:hibernate-ehcache:5.1.7.Final")
+
+    compile("org.springframework.security:spring-security-web:4.2.3.RELEASE")
+
+    compile("org.springframework.security:spring-security-config:4.2.3.RELEASE")
+
+    compile("org.springframework:spring-context:4.3.6.RELEASE")
+
+    compile("org.springframework:spring-beans:4.3.6.RELEASE")
+
+    compile("net.sf.ehcache:ehcache:2.10.4")
+
+
+    compile("commons-fileupload:commons-fileupload:1.3.3")
+
+    compile("org.aspectj:aspectjweaver:1.8.9")
+    compile("commons-httpclient:commons-httpclient:3.1")
+    compile("net.sourceforge.jtds:jtds:1.3.1")
+    compile("mysql:mysql-connector-java:6.0.6")
+    //mybatis 配置
+    compile("com.alibaba:druid:1.1.3")
+    compile("org.mybatis:mybatis-spring:1.3.1")
+    //compile("org.apache.ibatis:ibatis-sqlmap:3.0-beta-10")
+
+//    compile("org.apache.ibatis:ibatis-core:3.0")
+    // SqlSessionFactoryBean 依赖
+    compile("org.mybatis:mybatis:3.4.5")
+
+    // 常用工具类
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+    //spring 定时任务
+    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.0'
+
+    testCompile("redis.clients:jedis:2.9.0")
+//    testCompile files('/pdfbox-yanhui.1.0.jar')
+    testCompile fileTree(dir:'libs',include:['*.jar'])
+    testCompile("com.openhtmltopdf:openhtmltopdf-pdfbox:0.0.1-RC9")
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+}
+
